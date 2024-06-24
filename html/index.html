@@ -1,20 +1,140 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <title>Reusedecor</title>
 </head>
+
 <body>
-    
-<h1>aaaa</h1>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo"><a href="/index.html">
+                    <img href="prod" src="./img/icon.png" width="50vw" alt="logo"></a>
+            </div>
+
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#init" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#proj" class="nav-link">Projetos</a></li>
+                    <li class="nav-item"><a href="#prod" class="nav-link">Produtos</a></li>
+                    <li class="nav-item"><a href="#sob" class="nav-link">Sobre</a></li>
+                </ul>
+            </div>
+            <div class="icon-cart">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1" />
+                </svg>
+                <span>0</span>
+            </div>
+
+            <div class="login-button">
+                <a href="./html/registro.html" class="button-link">Entrar</a>
+            </div>
 
 
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="./img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#init" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="#proj" class="nav-link">Projetos</a></li>
+                <li class="nav-item"><a href="#prod" class="nav-link">Produtos</a></li>
+                <li class="nav-item"><a href="#sob" class="nav-link">Sobre</a></li>
+            </ul>
+
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>
+        </div>
+    </header>
 
 
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <div class="logofo"><a href="/index.html">
+                        <img href="init" src="./img/iconho.png" width="80vw" alt="logo"></a>
+                    <p>REUSEDECOR</p>
+                </div>
 
+                <div id="footer_social_media">
 
-    <script src="../js/page.js"></script>
+                    <a href="https://www.instagram.com/" target="_blank" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="https://www.facebook.com/" target="_blank" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="https://www.whatsapp.com/" target="_blank" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            <ul class="footer-list">
+                <li>
+                    <h3>Sobre Nós</h3>
+                </li>
+                <li>
+                    <a href="#init" class="footer-link">Historia</a>
+                </li>
+                <li>
+                    <a href="#proj" class="footer-link">Projeto</a>
+                </li>
+                <li>
+                    <a href="#proj" class="footer-link">Visão</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Produtos</h3>
+                </li>
+                <li>
+                    <a href="#prod" class="footer-link">Cadeira</a>
+                </li>
+                <li>
+                    <a href="#prod" class="footer-link">Mesa</a>
+                </li>
+                <li>
+                    <a href="#loc" class="footer-link">Localização</a>
+                </li>
+            </ul>
+
+            <div id="footer_subscribe">
+                <h3>Se inscreva!</h3>
+
+                <p>
+                    Digite seu e-mail e seja notificado sobre nossas novidades.
+                </p>
+
+                <div id="input_group">
+                    <input type="email" id="email">
+                    <button>
+                        <a href="mailto:reusedecor@outlook.com" target="l"><i class="fa-regular fa-envelope"></i></a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="footer_copyright">
+            &#169
+            2024 Projeto Zendesk.
+        </div>
+    </footer>
+    <script src="/js/mains.js"></script>
 </body>
+
 </html>
