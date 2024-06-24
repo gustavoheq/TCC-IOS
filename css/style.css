@@ -22,7 +22,7 @@
 body {
     margin: 0;
     font-family: "Roboto", sans-serif;
-    background-color: var(--color-ver-02);
+    background-color: var(--color-neutral-40);
 }
 
 h1 {
@@ -176,13 +176,13 @@ footer {
     margin-bottom: 0.75rem;
 }
 
-.logofo {
-    margin-left: 30px;
+.logofo img {
+    margin-left: 5vw;
 }
 
 .logofo img {
+    margin-left: 5vw;
     border-radius: 30px;
-    margin-left: 20px;
     cursor: pointer;
 }
 
