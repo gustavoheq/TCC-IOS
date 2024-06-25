@@ -7,14 +7,13 @@
   font-family: "DM Serif Display", serif;
 }
 
-<<<<<<< HEAD
 section {
   position: relative;
   width: 100%;
   min-height: 100vh;
   padding: 100px;
   display: flex;
-  justify-content: space-between;   
+  justify-content: space-between;
   align-items: center;
   background: hsl(0, 0%, 100%);
   transition: 0.5s;
@@ -54,7 +53,6 @@ header ul li a {
   font-size: 20px;
 }
 
-=======
 header {
   position: absolute;
   top: 0;
@@ -88,6 +86,7 @@ header ul li a {
   text-decoration: none;
   font-size: 20px;
 }
+
 section {
   position: relative;
   width: 100%;
@@ -101,7 +100,6 @@ section {
 }
 
 
->>>>>>> 703d298d686d97cd4a1e63ec00b4d6c7dc3585fa
 .content {
   position: relative;
   width: 100%;
@@ -130,7 +128,6 @@ section {
   font-weight: 600;
   line-height: px;
   max-width: 300px;
-<<<<<<< HEAD
 }
 
 .content .textBox h2 span {
@@ -246,7 +243,6 @@ section {
   background: gray;
   width: 100%;
   height: 100%;
-=======
 
 }
 
@@ -254,25 +250,25 @@ section {
   font-size: 2em;
 }
 
-.content .textBox p h1{
-    color: #fff;
-    font-size: 15px;
-    display: inline-block;
+.content .textBox p h1 {
+  color: #fff;
+  font-size: 15px;
+  display: inline-block;
 }
 
 
-.content .textBox a{
-    display: inline-block;
-    margin-top: 20px;
-    padding: 8px 20px;
-    background: #4e8246;
-    color: #111;
-    border-radius: 40px;
-    font-weight: 500;
-    letter-spacing: 3px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 15px;
+.content .textBox a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 8px 20px;
+  background: #4e8246;
+  color: #111;
+  border-radius: 40px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
 
 }
 
@@ -376,7 +372,6 @@ section {
 .service-one .over-txt p {
   margin: 0;
   color: #174f0a;
->>>>>>> 703d298d686d97cd4a1e63ec00b4d6c7dc3585fa
 }
 
 .service-one .over-txt {
@@ -399,10 +394,7 @@ section {
   height: 100vh;
   margin: 0;
   background-color: #f0f0f0;
-<<<<<<< HEAD
-=======
 
->>>>>>> 703d298d686d97cd4a1e63ec00b4d6c7dc3585fa
 }
 
 .card {
@@ -416,11 +408,8 @@ section {
   position: relative;
   box-shadow: 0 4px 8px rgba(160, 49, 49, 0.1);
   transition: transform 0.3s ease;
-<<<<<<< HEAD
-=======
 
 
->>>>>>> 703d298d686d97cd4a1e63ec00b4d6c7dc3585fa
 }
 
 .card img {
@@ -428,27 +417,18 @@ section {
   height: 100%;
   object-fit: cover;
   transition: filter 0.3s ease;
-<<<<<<< HEAD
-=======
 
 
->>>>>>> 703d298d686d97cd4a1e63ec00b4d6c7dc3585fa
 }
 
 .card:hover img {
   filter: grayscale(100%);
-<<<<<<< HEAD
-=======
 
->>>>>>> 703d298d686d97cd4a1e63ec00b4d6c7dc3585fa
 }
 
 .card:hover .overlay {
   opacity: 1;
-<<<<<<< HEAD
-=======
 
->>>>>>> 703d298d686d97cd4a1e63ec00b4d6c7dc3585fa
 }
 
 .overlay {
@@ -520,11 +500,8 @@ section {
   background-color: #3f682d;
 }
 
-<<<<<<< HEAD
-=======
 
 
->>>>>>> 703d298d686d97cd4a1e63ec00b4d6c7dc3585fa
 .eve {
   position: relative;
   width: 100%;
@@ -578,11 +555,8 @@ section {
   text-decoration: none;
   border-radius: 40px;
   transition: background-color 0.3s ease;
-<<<<<<< HEAD
-=======
 
 
->>>>>>> 703d298d686d97cd4a1e63ec00b4d6c7dc3585fa
 }
 
 .button:hover {
@@ -645,8 +619,6 @@ section {
 
 }
 
-<<<<<<< HEAD
-=======
 
 
 
@@ -656,16 +628,12 @@ section {
 
 
 
->>>>>>> 703d298d686d97cd4a1e63ec00b4d6c7dc3585fa
 .galeria2 div.galeria {
   width: 100%;
   height: 90vh;
   display: flex;
   align-items: center;
-<<<<<<< HEAD
-=======
 
->>>>>>> 703d298d686d97cd4a1e63ec00b4d6c7dc3585fa
 }
 
 .galeria2 div.galeria div.single-galeria {
@@ -674,14 +642,7 @@ section {
   height: 100%;
   margin: 0 5px;
   transition: width 1s;
-<<<<<<< HEAD
-=======
-
->>>>>>> 703d298d686d97cd4a1e63ec00b4d6c7dc3585fa
-}
-
-.galeria2 div.galeria div.single-galeria:first-child {
-  width: 35% !important;
+  <<<<<<< HEAD=======width: 35% !important;
 
 }
 
@@ -697,19 +658,11 @@ section {
   width: 35% !important;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 703d298d686d97cd4a1e63ec00b4d6c7dc3585fa
-.galeria2 div.galeria div.single-galeria img {
+<<<<<<< HEAD=======>>>>>>>703d298d686d97cd4a1e63ec00b4d6c7dc3585fa .galeria2 div.galeria div.single-galeria img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 703d298d686d97cd4a1e63ec00b4d6c7dc3585fa
+  <<<<<<< HEAD=======>>>>>>>703d298d686d97cd4a1e63ec00b4d6c7dc3585fa
 }
 
 .galeria2 div.galeria div.single-galeria div.info {
@@ -754,25 +707,15 @@ section p {
 
 }
 
-@media screen and (max-width: 764px) {
+.galeria2 div.galeria {
+  width: 100%;
+  height: 70vh;
+  justify-content: flex-start;
+  overflow-x: scroll;
+}
 
-<<<<<<< HEAD
-=======
-@media screen and (max-width: 764px) {
-
->>>>>>> 703d298d686d97cd4a1e63ec00b4d6c7dc3585fa
-  .galeria2 div.galeria {
-    width: 100%;
-    height: 70vh;
-    justify-content: flex-start;
-    overflow-x: scroll;
-
-  }
-
-  .galeria2 div.galeria div.single-galeria {
-    min-width: 90% !important;
-
-  }
+.galeria2 div.galeria div.single-galeria {
+  min-width: 90% !important;
 
 }
 
@@ -797,18 +740,11 @@ section p {
   display: flex;
   text-align: center;
 }
+
 p {
   font-size: 20px;
   color: #50a053;
-  display:inline-block;
-  
-
-<<<<<<< HEAD
-button {
-=======
-}
-button{
->>>>>>> 703d298d686d97cd4a1e63ec00b4d6c7dc3585fa
+  display: inline-block;
   border-radius: 50px;
   background-color: #4CAF50;
   color: white;
@@ -886,7 +822,7 @@ footer {
 
 /* Footer links */
 
-.footer-distributed .footer-links { 
+.footer-distributed .footer-links {
   color: #ffffff;
   margin: 20px 0 12px;
 }
@@ -1013,13 +949,7 @@ footer {
     margin-left: 0;
   }
 }
-<<<<<<< HEAD
-=======
 
-
-
-
->>>>>>> 703d298d686d97cd4a1e63ec00b4d6c7dc3585fa
 
 .card-container {
   display: flex;
