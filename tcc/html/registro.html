@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="shortcut icon" href="../img/cafecon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/registro.css">
+    <title>Alma Coffe</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo"><a href="../html/index.html">
+                <img href="prod" src="../img/cafecon.png" width="90vw" alt="logo"></a>
+            </div>
+
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="../html/index.html" class="nav-link">Início</a></li>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="/img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="../html/index.html" class="nav-link">Início</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="container" id="container">
+            <div class="form-container sign-up-container">
+                <form action="#">
+                    <h1>Criar uma conta</h1>
+                    <div class="social-container">
+                        <a href="https://www.facebook.com/" class="social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://myaccount.google.com/" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="https://www.linkedin.com/" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <span>Use seu e-mail para cadastro</span>
+                    <div class="infield">
+                        <input type="text" placeholder="Nome" />
+                        <label></label>
+                    </div>
+                    <div class="infield">
+                        <input type="email" placeholder="Email" name="email" />
+                        <label></label>
+                    </div>
+                    <div class="infield">
+                        <input type="password" placeholder="Senha" />
+                        <label></label>
+                    </div>
+                    <button><a href="../html/registro.html">
+                            Inscrever-se</a></button>
+                </form>
+            </div>
+            <div class="form-container sign-in-container">
+                <form action="#">
+                    <h1>
+                        Entrar</h1>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <span>Use sua conta</span>
+                    <div class="infield">
+                        <input type="email" placeholder="Email" name="email" />
+                        <label></label>
+                    </div>
+                    <div class="infield">
+                        <input type="password" placeholder="Senha" />
+                        <label></label>
+                    </div>
+                    <a href="#" class="forgot">
+                        Esqueceu sua senha?</a>
+                    <button><a href="../html/endereco.html">Entrar</a></button>
+                </form>
+            </div>
+            <div class="overlay-container" id="overlayCon">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1>Bem-vindo de volta!</h1>
+                        <p>Para se manter conectado conosco, faça login com suas informações pessoais</p>
+                        <button>Entrar</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1>Olá, amigo!</h1>
+                        <p>Insira seus dados pessoais e comece sua jornada conosco</p>
+                        <button>Inscreva-se</button>
+                    </div>
+                </div>
+                <button id="overlayBtn"></button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <div class="logofo">
+                    <a href="../html/index.html"><img href="init" src="../img/cafecon.png" width="90vw" alt="logo"></a>
+                        <h4>ALMA COFFE</h4>
+                </div>
+
+                <div id="footer_social_media">
+
+                    <a href="https://www.instagram.com/" target="_blank" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="https://www.facebook.com/" target="_blank" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="https://www.whatsapp.com/" target="_blank" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            <ul class="footer-list">
+                <li>
+                    <h3>Sobre Nós</h3>
+                </li>
+                <li>
+                    <a href="#init" class="footer-link">Historia</a>
+                </li>
+                <li>
+                    <a href="#proj" class="footer-link">Projeto</a>
+                </li>
+                <!-- <li>
+                    <a href="#proj" class="footer-link">Visão</a>
+                </li> -->
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Produtos</h3>
+                </li>
+                <li>
+                    <a href="#prod" class="footer-link">Lanche</a>
+                </li>
+                <li>
+                    <a href="#prod" class="footer-link">Bebidas</a>
+                </li>
+                <li>
+                    <a href="#loc" class="footer-link">Localização</a>
+                </li>
+            </ul>
+
+            <div id="footer_subscribe">
+                <h3>Se inscreva!</h3>
+
+                <p>
+                    Digite seu e-mail e seja notificado sobre nossas novidades.
+                </p>
+
+                <div id="input_group">
+                    <input type="email" id="email">
+                    <button>
+                        <a href="mailto:almacoffe@outlook.com" target="l"><i class="fa-regular fa-envelope"></i></a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="footer_copyright">
+            &#169
+            2024 Alma Coffee Co.
+        </div>
+    </footer>
+    <script src="../js/registro.js"></script>
+</body>
+
+</html>

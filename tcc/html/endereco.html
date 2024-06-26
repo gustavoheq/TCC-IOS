@@ -8,31 +8,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="shortcut icon" href="/img/cafecon.png" type="image/x-icon">
-    <link rel="stylesheet" href="/css/estilo.css">
+    <link rel="shortcut icon" href="../img/cafecon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/endereco.css">
     <title>Alma Coffe</title>
 </head>
 
 <body>
     <header>
         <nav class="nav-bar">
-            <div class="logo"><a href="/index.html">
-                    <img href="prod" src="/img/cafecon.png" width="90vw" alt="logo"></a>
+            <div class="logo"><a href="../html/index.html">
+                    <img href="prod" src="../img/cafecon.png" width="90vw" alt="logo"></a>
             </div>
 
             <div class="nav-list">
                 <ul>
-                    <li class="nav-item"><a href="#init" class="nav-link">Início</a></li>
-                    <li class="nav-item"><a href="#proj" class="nav-link">Projetos</a></li>
-                    <li class="nav-item"><a href="#prod" class="nav-link">Produtos</a></li>
-                    <li class="nav-item"><a href="#sob" class="nav-link">Sobre</a></li> 
-                </ul>
+                    <li class="nav-item"><a href="../html/index.html" class="nav-link">Início</a></li>
             </div>
-
-            <div class="login-button">
-                <a href="./html/registro.html" class="button-link">Entrar</a>
-            </div>
-
 
             <div class="mobile-menu-icon">
                 <button onclick="menuShow()"><img class="icon" src="/img/menu_white_36dp.svg" alt=""></button>
@@ -41,54 +32,55 @@
 
         <div class="mobile-menu">
             <ul>
-                <li class="nav-item"><a href="#init" class="nav-link">Início</a></li>
-                <li class="nav-item"><a href="#proj" class="nav-link">Projetos</a></li>
-                <li class="nav-item"><a href="#prod" class="nav-link">Produtos</a></li>
-                <li class="nav-item"><a href="#sob" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="../html/index.html" class="nav-link">Início</a></li>
             </ul>
-
-            <div class="login-button">
-                <button><a href="#">Entrar</a></button>
-            </div>
         </div>
     </header>
 
-    <section class="sec">
-        <div class="content">
-            <div class="textBox">
-                <h2>Alma Coffee & Co<br><span></span></h2>
-                <p>Todos os dias, os parceiros (funcionários) da Alma Coffee vão trabalhar na esperança de fazer duas
-                    coisas: compartilhar um ótimo café com seus amigos e ajudar a tornar o mundo um pouco melhor.</p>
-
-                <p> O fluir da alma em um gole de café</p>
-                <a href="#">Ver Produtos</a>
-            </div>
-            <div class="imgBox">
-                <img src="/img/MOCHA-LATTESS.png" class="cafe">
-            </div>
-        </div>
-
-        <ul class="thumb">
-            <li><img src="/img/MOCHA-LATTESS.png" onclick="imgSlider('/img/MOCHA-LATTESS.png');changeBgColor('#543737')"></li>
-            <li><img src="/img/LATTEICED.png" onclick="imgSlider('/img/LATTEICED.png');changeBgColor('#c0a276')"></li>
-            <li><img src="/img/SPARKLINGEXPRESS_1.webp" onclick="imgSlider('/img/SPARKLINGEXPRESS_1.webp');changeBgColor('#1e1e1e')"></li>
-        </ul>
-
-        <ul class="sci">
-            <li><a href="#"><img src="/img/facebook.png"></a>
-            <li><a href="#"><img src="/img/instagram.png"></a>
-            <li><a href="#"><img src="/img/twitter.png"></a>
-        </ul>
-    </section>
     <main>
-
+        <div class="container">
+            <form id="address-form">
+                <div class="inputBox">
+                    <label for="cep-input">CEP</label>
+                    <input type="text" id="cep-input" name="cep">
+                </div>
+                <div class="inputBox">
+                    <label for="address-input">Endereço</label>
+                    <input type="text" id="address-input" name="address">
+                </div>
+                <div class="inputBox">
+                    <label for="street-number-input">Número</label>
+                    <input type="text" id="street-number-input" name="street_number">
+                </div>
+                <div class="inputBox">
+                    <label for="complement-input">Complemento</label>
+                    <input type="text" id="complement-input" name="complement">
+                </div>
+                <div class="inputBox">
+                    <label for="neighborhood-input">Bairro</label>
+                    <input type="text" id="neighborhood-input" name="neighborhood">
+                </div>
+                <div class="flexbox">
+                    <div class="inputBox">
+                        <label for="state-input">Estado</label>
+                        <input type="text" id="state-input" name="state">
+                    </div>
+                    <div class="inputBox">
+                        <label for="city-input">Cidade</label>
+                        <input type="text" id="city-input" name="city">
+                    </div>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+            <a href="/tcc/html/cartao.html" class="button-link">Ir para Cartão</a>
+        </div>
     </main>
 
     <footer>
         <div id="footer_content">
             <div id="footer_contacts">
                 <div class="logofo">
-                    <a href="/index.html"><img href="init" src="/img/cafecon.png" width="90vw" alt="logo"></a>
+                    <a href="../html/index.html"><img href="init" src="../img/cafecon.png" width="90vw" alt="logo"></a>
                         <h4>ALMA COFFE</h4>
                 </div>
 
@@ -114,24 +106,24 @@
                 <li>
                     <a href="#init" class="footer-link">Historia</a>
                 </li>
-                <li>
+                <!-- <li>
                     <a href="#proj" class="footer-link">Projeto</a>
                 </li>
                 <li>
                     <a href="#proj" class="footer-link">Visão</a>
-                </li>
+                </li> -->
             </ul>
 
             <ul class="footer-list">
                 <li>
-                    <h3>Produtos</h3>
+                    <h3>Loja</h3>
+                </li>
+                <!-- <li>
+                    <a href="#prod" class="footer-link">Lanche</a>
                 </li>
                 <li>
-                    <a href="#prod" class="footer-link">Cadeira</a>
-                </li>
-                <li>
-                    <a href="#prod" class="footer-link">Mesa</a>
-                </li>
+                    <a href="#prod" class="footer-link">Bebidas</a>
+                </li> -->
                 <li>
                     <a href="#loc" class="footer-link">Localização</a>
                 </li>
@@ -157,7 +149,7 @@
             2024 Alma Coffee Co.
         </div>
     </footer>
-    <script src="/js/mains.js"></script>
+    <script src="../js/endereco.js"></script>
 </body>
 
 </html>

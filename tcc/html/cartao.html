@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="/tcc/img/cafecon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/cartao.css">
+    <title>Alma Coffe</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo"><a href="/tcc/html/index.html">
+                    <img href="prod" src="/tcc/img/cafecon.png" width="90vw" alt="logo"></a>
+            </div>
+
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="/index.html" class="nav-link">Início</a></li>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="/img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="/index.html" class="nav-link">Início</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="formulario">
+
+            <div class="card-formulario">
+                <div class="front">
+                    <div class="image">
+                        <img src="/img/chip.png" alt="">
+                        <img src="/img/visa.png" alt="">
+                    </div>
+                    <div class="card-number-box">################</div>
+                    <div class="flexbox">
+                        <div class="box">
+                            <span>titular do cartão</span>
+                            <div class="card-holder-name">Nome completo</div>
+                        </div>
+                        <div class="box">
+                            <span>expira</span>
+                            <div class="expiration">
+                                <span class="exp-month">mês</span>
+                                <span class="exp-year">ano</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="back">
+                    <div class="stripe"></div>
+                    <div class="box">
+                        <span>cvv</span>
+                        <div class="cvv-box"></div>
+                        <img src="/img/visa.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <form id="paymentForm" action="">
+                <div class="inputBox">
+                    <span>numero cartão</span>
+                    <input type="text" maxlength="16" class="card-number-input">
+                </div>
+                <div class="inputBox">
+                    <span>titular do cartão</span>
+                    <input type="text" class="card-holder-input">
+                </div>
+                <div class="flexbox">
+                    <div class="inputBox">
+                        <span>expiração mm</span>
+                        <select class="month-input">
+                            <option value="month" selected disabled>mês</option>
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                    </div>
+                    <div class="inputBox">
+                        <span>expiração yy</span>
+                        <select class="year-input">
+                            <option value="year" selected disabled>ano</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                            <option value="2026">2026</option>
+                            <option value="2027">2027</option>
+                            <option value="2028">2028</option>
+                            <option value="2029">2029</option>
+                            <option value="2030">2030</option>
+                        </select>
+                    </div>
+                    <div class="inputBox">
+                        <span>cvv</span>
+                        <input type="text" maxlength="4" class="cvv-input">
+                    </div>
+                </div>
+                <a href="../html/endereco.html"><input type="button" value="voltar" class="submit-btn"></a>
+                <input type="submit" value="concluir" class="submit-btn">
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <div class="logofo">
+                    <a href="../html/index.html"><img href="init" src="../img/cafecon.png" width="90vw" alt="logo"></a>
+                        <h4>ALMA COFFE</h4>
+                </div>
+
+                <div id="footer_social_media">
+
+                    <a href="https://www.instagram.com/" target="_blank" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="https://www.facebook.com/" target="_blank" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="https://www.whatsapp.com/" target="_blank" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            <ul class="footer-list">
+                <li>
+                    <h3>Sobre Nós</h3>
+                </li>
+                <li>
+                    <a href="#init" class="footer-link">Historia</a>
+                </li>
+                <!-- <li>
+                    <a href="#proj" class="footer-link">Projeto</a>
+                </li>
+                <li>
+                    <a href="#proj" class="footer-link">Visão</a>
+                </li> -->
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Loja</h3>
+                </li>
+                <!-- <li>
+                    <a href="#prod" class="footer-link">Lanche</a>
+                </li>
+                <li>
+                    <a href="#prod" class="footer-link">Bebidas</a>
+                </li> -->
+                <li>
+                    <a href="#loc" class="footer-link">Localização</a>
+                </li>
+            </ul>
+
+            <div id="footer_subscribe">
+                <h3>Se inscreva!</h3>
+
+                <p>
+                    Digite seu e-mail e seja notificado sobre nossas novidades.
+                </p>
+
+                <div id="input_group">
+                    <input type="email" id="email">
+                    <button>
+                        <a href="mailto:almacoffe@outlook.com" target="l"><i class="fa-regular fa-envelope"></i></a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="footer_copyright">
+            &#169
+            2024 Alma Coffee Co.
+        </div>
+    </footer>
+    <script src="../js/cartao.js"></script>
+</body>
+
+</html>
