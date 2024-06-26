@@ -130,7 +130,7 @@ p{
 }
 
 .content .textBox h2 {
-  color: #2dca3d;
+  color: #5B6234;
   font-size: 3em;
   line-height: 1.5em;
   font-weight: 900;
@@ -159,7 +159,7 @@ p{
 .content .textBox a {
   width: 9vw;
   display: flex;
-  background: #2dca3d;
+  background: #5B6234;
   color: #ffffff;
   text-align: auto;
   font-size: 15px;
@@ -469,7 +469,7 @@ p{
   /* tamanho da fonte aumentado */
   margin-bottom: 15px;
   /* margem inferior aumentada */
-  color: #5fa143;
+  color: #5B6234;
 }
 
 .text-card p {
@@ -477,7 +477,7 @@ p{
   /* tamanho da fonte aumentado */
   margin-bottom: 25px;
   /* margem inferior aumentada */
-  color: #5fa143;
+  color: #5B6234;
 }
 
 .text-card button {
@@ -486,7 +486,7 @@ p{
   font-size: 18px;
   /* tamanho da fonte aumentado */
   border: none;
-  background-color: #5fa143;
+  background-color: #5B6234;
   color: white;
   cursor: pointer;
   border-radius: 40px;
@@ -547,7 +547,7 @@ p{
 .button {
   display: inline-block;
   padding: 12px 24px;
-  background-color: #2aa042;
+  background-color: #5B6234;
   color: #fff;
   text-decoration: none;
   border-radius: 40px;
@@ -579,7 +579,7 @@ p{
 }
 
 .image img {
-  width: 100%;
+  width: 80%;
   height: auto;
   border-radius: 10px;
 }
@@ -594,7 +594,7 @@ p{
 
 .eu h1 {
   font-size: 40px;
-  color: #3c793e;
+  color: #5B6234;
   margin-bottom: 30px;
 }
 
