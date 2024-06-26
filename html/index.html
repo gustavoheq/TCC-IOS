@@ -9,7 +9,7 @@
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="shortcut icon" href="/img/cafecon.png" type="image/x-icon">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/estilo.css">
     <title>Alma Coffe</title>
 </head>
 
@@ -17,7 +17,7 @@
     <header>
         <nav class="nav-bar">
             <div class="logo"><a href="/index.html">
-                    <img href="prod" src="/img/cafecon.png" width="65px" alt="logo"></a>
+                    <img href="prod" src="/img/cafecon.png" width="90vw" alt="logo"></a>
             </div>
 
             <div class="nav-list">
@@ -35,7 +35,7 @@
 
 
             <div class="mobile-menu-icon">
-                <button onclick="menuShow()"><img class="icon" src="./img/menu_white_36dp.svg" alt=""></button>
+                <button onclick="menuShow()"><img class="icon" src="/img/menu_white_36dp.svg" alt=""></button>
             </div>
         </nav>
 
@@ -53,6 +53,33 @@
         </div>
     </header>
 
+    <section class="sec">
+        <div class="content">
+            <div class="textBox">
+                <h2>Alma Coffee & Co<br><span></span></h2>
+                <p>Todos os dias, os parceiros (funcionários) da Alma Coffee vão trabalhar na esperança de fazer duas
+                    coisas: compartilhar um ótimo café com seus amigos e ajudar a tornar o mundo um pouco melhor.</p>
+
+                <p> O fluir da alma em um gole de café</p>
+                <a href="#">Ver Produtos</a>
+            </div>
+            <div class="imgBox">
+                <img src="/img/MOCHA-LATTESS.png" class="cafe">
+            </div>
+        </div>
+
+        <ul class="thumb">
+            <li><img src="/img/MOCHA-LATTESS.png" onclick="imgSlider('/img/MOCHA-LATTESS.png');changeBgColor('#543737')"></li>
+            <li><img src="/img/LATTEICED.png" onclick="imgSlider('/img/LATTEICED.png');changeBgColor('#c0a276')"></li>
+            <li><img src="/img/SPARKLINGEXPRESS_1.webp" onclick="imgSlider('/img/SPARKLINGEXPRESS_1.webp');changeBgColor('#1e1e1e')"></li>
+        </ul>
+
+        <ul class="sci">
+            <li><a href="#"><img src="/img/facebook.png"></a>
+            <li><a href="#"><img src="/img/instagram.png"></a>
+            <li><a href="#"><img src="/img/twitter.png"></a>
+        </ul>
+    </section>
     <main>
 
     </main>
@@ -60,9 +87,9 @@
     <footer>
         <div id="footer_content">
             <div id="footer_contacts">
-                <div class="logofo"><a href="/index.html">
-                        <img href="init" src="/img/cafecon.png" width="90vw" alt="logo"></a>
-                        <p>ALMA COFFE</p>
+                <div class="logofo">
+                    <a href="/index.html"><img href="init" src="/img/cafecon.png" width="90vw" alt="logo"></a>
+                        <h4>ALMA COFFE</h4>
                 </div>
 
                 <div id="footer_social_media">
@@ -127,7 +154,7 @@
         </div>
         <div id="footer_copyright">
             &#169
-            2024 Projeto Alma Coffe.
+            2024 Alma Coffee Co.
         </div>
     </footer>
     <script src="/js/mains.js"></script>

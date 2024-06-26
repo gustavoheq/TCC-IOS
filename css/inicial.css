@@ -19,7 +19,7 @@ section {
   transition: 0.5s;
 }
 
-header {
+/* header {
   position: absolute;
   top: 0;
   left: 0;
@@ -85,7 +85,7 @@ header ul li a {
   margin-left: 40px;
   text-decoration: none;
   font-size: 20px;
-}
+} */
 
 section {
   position: relative;
