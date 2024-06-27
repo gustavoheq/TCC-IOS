@@ -168,12 +168,10 @@ svg {
 
 
 .sec p {
-    font-size: 20px;
-    border-radius: 30px;
     color: #5B6234;
     padding: 15px 10px;
     text-align: justify;
-    font-size: 20px;
+    border-radius: 30px;
     transition: background-color 0.3s;
 }
 
@@ -181,6 +179,7 @@ svg {
     position: relative;
     width: 100%;
     display: flex;
+    margin-left: 5vw;
     justify-content: space-between;
     align-items: center;
 }
@@ -192,10 +191,10 @@ svg {
 
 .content .textBox h2 {
     color: #5B6234;
+    margin-left: 0.5vw;
     font-size: 3em;
     line-height: 1.5em;
     font-weight: 900;
-    text-align: center;
     text-transform: uppercase;
 }
 
@@ -219,11 +218,11 @@ svg {
 
 .content .textBox a {
     width: 9vw;
-    background: #5B6234;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 0.5vw;
     color: #ffffff;
-    text-align: auto;
-    font-size: 10px;
-    margin-top: 20px;
+    background: #5B6234;
+    margin-top: 30px;
     padding: 8px 20px;
     border-radius: 20px;
     text-decoration: none;
@@ -1029,6 +1028,7 @@ footer {
 
     .centro h1 {
         font-size: 40px;
+        color: var(--color-neutral-0);
     }
 
     .centro p {
@@ -1210,13 +1210,13 @@ footer {
 
 .centro h4 {
     font-size: 20px;
-    color: #50a053;
+    color: var(--color-neutral-0);
     margin: 0;
 }
 
 .centro h1 {
     font-size: 60px;
-    color: #50a053;
+    color: var(--color-neutral-0);
     margin: 10px 0;
 }
 
@@ -1230,7 +1230,7 @@ footer {
     width: 15vw;
     font-size: 15px;
     color: #ffffff;
-    background: #2dca3d;
+    background: var(--color-neutral-0);
     margin-top: 20px;
     padding: 8px 20px;
     border-radius: 20px;
