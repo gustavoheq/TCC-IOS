@@ -539,6 +539,14 @@ footer {
 	color: #000000;
 }
 
+.lanche {
+    text-decoration: none;
+}
+
+.bebida {
+    text-decoration: none;
+}
+
 /* Products */
 .container-products {
 	display: grid;
@@ -691,13 +699,6 @@ footer {
 	margin-left: 0.5rem;
 }
 
-p{
+p {
     text-align: center;
 }
-
-
-
-
-
-
-
