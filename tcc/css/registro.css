@@ -2,18 +2,18 @@
 
 :root {
     --color-texto-cards:#f0f8ff;
-    --color-claro: #B9CE78;
+    --color-claro: #090907;
     --color-verde-medio: #9FB167;
     --color-verde-semiescuro: #859456;
     --color-verde-escuro: #6D7946;
     --color-textos: #3d3d3d;
-    --color-neutral-0: #0e0c0c;
-    --color-neutral-10: #171717;
-    --color-neutral-30: #a8a29e;
-    --color-neutral-40: #f5f5f5;
-    --color-ver-01: #E2E7D4;
+    --color-neutral-0: #5B6234;;
+    --color-neutral-10: #ffffff;
+    --color-neutral-30: #000000;
+    --color-neutral-40: #080707;
+    --color-ver-01: #090909;
     --color-ver-02: #ADB48E;
-    --color-ver-03: #B4BA94;
+    --color-ver-03: #0f0f0f;
     --color-ver-04: #5B6234;
 }
 
@@ -249,7 +249,7 @@ input:focus~label {
 }
 
 a {
-    color: black;
+    color: #5B6234;
     font-size: 14px;
     text-decoration: none;
     margin: 15px 0px;
@@ -509,7 +509,7 @@ footer {
 }
 
 #input_group button {
-    background-color: #25d366;
+    background-color: #000000;
     border: none;
     color: var(--color-neutral-40);
     padding: 0px 1.25rem;

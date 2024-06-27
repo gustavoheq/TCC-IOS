@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
 :root {
-    --color-neutral-0: #0e0c0c;
-    --color-neutral-10: #171717;
-    --color-neutral-30: #a8a29e;
-    --color-neutral-40: #f5f5f5;
-    --color-ver-01: #E2E7D4;
-    --color-ver-02: #ADB48E;
-    --color-ver-03: #B4BA94;
+    --color-neutral-0: #5B6234;
+    --color-neutral-10: #ffffff;
+    --color-neutral-30: #000000;
+    --color-neutral-40: #000000;
+    --color-ver-01: #000000;
+    --color-ver-02: #ffffff;
+    --color-ver-03: #000000;
     --color-ver-04: #5B6234;
 }
 
@@ -161,7 +161,7 @@ svg {
 }
 
 .sec p {
-    color: #000000;
+    color: #5B6234;
     font-size: 22px;
     line-height: 32px;
 }
@@ -170,7 +170,7 @@ svg {
 .sec p {
     font-size: 20px;
     border-radius: 30px;
-    color: rgb(0, 0, 0);
+    color: #5B6234;
     padding: 15px 10px;
     text-align: justify;
     font-size: 20px;
@@ -191,7 +191,7 @@ svg {
 }
 
 .content .textBox h2 {
-    color: #2dca3d;
+    color: #5B6234;
     font-size: 3em;
     line-height: 1.5em;
     font-weight: 900;
@@ -219,12 +219,25 @@ svg {
 
 .content .textBox a {
     width: 9vw;
-    background: #2dca3d;
+    background: #5B6234;
     color: #ffffff;
     text-align: auto;
-    font-size: 15px;
+    font-size: 10px;
     margin-top: 20px;
     padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.box3 a {
+    width: 14vw;
+    background: #5B6234;
+    color: #ffffff;
+    text-align: auto;
+    font-size: 14px;
+    margin-top: 20px;
+    padding: 6px 10px;
     border-radius: 20px;
     text-decoration: none;
     text-transform: uppercase;
@@ -437,7 +450,7 @@ svg {
 
 .service-one .over-txt p {
     margin: 0;
-    color: #174f0a;
+    color: #5B6234;
 }
 
 .service-one .over-txt {
@@ -531,7 +544,7 @@ svg {
     padding: 12px 24px;
     font-size: 18px;
     border: none;
-    background: #2dca3d;
+    background: #5B6234;
     color: white;
     cursor: pointer;
     border-radius: 20px;
@@ -541,6 +554,10 @@ svg {
 
 .box3 button:hover {
     background-color: #3f682d;
+}
+
+.box3 h1{
+    color: #5B6234;
 }
 
 
@@ -592,7 +609,7 @@ svg {
     padding: 12px 24px;
     font-size: 18px;
 
-    background: #2dca3d;
+    background: #5B6234;
     color: white;
     cursor: pointer;
     border-radius: 20px;
@@ -643,9 +660,10 @@ svg {
     margin-bottom: 30px;
 }
 
+
 .eu p {
     font-size: 20px;
-    color: #3c793e;
+    color: #5B6234;
     margin-bottom: 20px;
     display: inline-block;
 
@@ -662,89 +680,106 @@ svg {
 }
 
 
-/* .galeria2 div.galeria {
+
+
+header div.galeria{
     width: 100%;
     height: 90vh;
     display: flex;
     align-items: center;
-
 }
 
-.galeria2 div.galeria div.single-galeria {
+header div.galeria div.single-galeria{
     position: relative;
     width: 20%;
     height: 100%;
     margin: 0 5px;
     transition: width 1s;
-    width: 35% !important;
-
 }
 
-.galeria2.galeria:hover div.single-galeria:first-child {
+header div.galeria div.single-galeria:first-child{
+    width: 35% !important;
+}
+
+header div.galeria:hover div.single-galeria:first-child{
     width: 20% !important;
 }
 
-.galeria2 div.galeria div.single-galeria:hover {
+header div.galeria div.single-galeria:hover{
     width: 35% !important;
 }
 
-.galeria2 div.galeria div.single-galeria:first-child:hover {
+header div.galeria div.single-galeria:first-child:hover{
     width: 35% !important;
 }
 
-.galeria2 div.galeria div.single-galeria img {
+
+header div.galeria div.single-galeria img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-
 }
 
-.galeria2 div.galeria div.single-galeria div.info {
+header div.galeria div.single-galeria div.info{
     position: absolute;
     width: 100%;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 65%, transparent);
+    background: linear-gradient(to top, rgba(0,0,0,0.8) 65%, transparent);
     padding: 16% 8%;
     bottom: 0;
-
 }
 
-.galeria2.galeria div.single-galeria div.info h1 {
+header div.galeria div.single-galeria div.info h1{
     font-size: 26px;
     color: white;
 }
 
-.galeria2 div.galeria div.single-galeria div.info p {
+header div.galeria div.single-galeria div.info p{
     font-size: 14px;
     line-height: 28px;
     color: white;
-
 }
 
-.galeria2 div.galeria div.single-galeria div.info a {
+header div.galeria div.single-galeria div.info a{
     font-size: 14px;
     line-height: 28px;
-    color: rgb(65, 181, 61);
+    color: gold;
     text-decoration: none;
-
 }
 
-.galeria2 div.galeria div.single-galeria div.info a:hover {
+header div.galeria div.single-galeria div.info a:hover{
     text-decoration: underline;
-
 }
 
-.galeria2 div.galeria {
+section{
     width: 100%;
-    height: 70vh;
-    justify-content: flex-start;
-    overflow-x: scroll;
+    height: 100vh;
+    padding: 8%;
+    display: grid;
+    place-items: center;
+    background-color: rgb(250,250,250);
 }
 
-.galeria2 div.galeria div.single-galeria {
-    min-width: 90% !important;
+section p{
+    color: rgb(100,100,100);
+    font-size: 22px;
+    line-height: 32px;
+}
+
+
+@media screen and (max-width: 764px){
+
+    header div.galeria{
+        width: 100%;
+        height: 70vh;
+        justify-content: flex-start;
+        overflow-x: scroll;
+    }
+    
+    header div.galeria div.single-galeria{
+        min-width: 90% !important;
+    }
 
 }
-*/
 .centro {
     width: 100%;
     min-height: 100vh;
@@ -757,19 +792,20 @@ svg {
     padding: 100px;
 }
 
-.centro h4 {
+.centro .h4 {
     font-size: 20px;
-    color: #50a053;
+    color: #5B6234;
     margin: 0;
 }
 
-.centro h1 {
+.centro .h1 {
     font-size: 60px;
-    color: #50a053;
+    color: #5B6234;
     margin: 10px 0;
 }
 
 .centro p {
+    color: #5B6234;
     font-size: 20px;
     text-align: center;
     margin: 10px 0;
@@ -895,7 +931,7 @@ footer {
 }
 
 #input_group button {
-    background-color: #25d366;
+    background-color: #070707;
     border: none;
     color: var(--color-neutral-40);
     padding: 0px 1.25rem;
@@ -1201,3 +1237,66 @@ footer {
     text-decoration: none;
     text-transform: uppercase;
 }
+
+
+
+
+.choose__content.section__header h2{
+    font-size: 20%;
+   
+}
+
+
+.choose__container {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  .choose__container .choose__bg {
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-3rem);
+    max-width: 300px;
+    opacity: 0.4;
+    z-index: -1;
+  }
+  
+  .choose__grid {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 1rem;
+  }
+  
+  .choose__card span {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    padding: 5px 10px;
+    font-size: 1.25rem;
+    background-color: #cad8d8;
+    border-radius: 100%;
+  }
+  
+  .choose__card h4 {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: var(--header-font);
+    color: var(--text-dark);
+  }
+  
+  .choose__card p {
+    color: var(--text-light);
+  }
+  
+  .choose__image img {
+    max-width: 500px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  }
+  

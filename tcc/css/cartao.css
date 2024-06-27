@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
 :root {
-    --color-neutral-0: #0e0c0c;
-    --color-neutral-10: #171717;
+    --color-neutral-0: #5B6234;
+    --color-neutral-10: #ffffff;
     --color-neutral-30: #a8a29e;
-    --color-neutral-40: #f5f5f5;
-    --color-ver-01: #E2E7D4;
+    --color-neutral-40: #000000;
+    --color-ver-01: #000000;
     --color-ver-02: #ADB48E;
-    --color-ver-03: #B4BA94;
+    --color-ver-03: #000000;
     --color-ver-04: #5B6234;
 }
 
@@ -305,7 +305,7 @@ main {
     height: 100%;
     width: 100%;
     top: 0; left: 0;
-    background:linear-gradient(45deg, rgb(43, 183, 226), rgb(12, 145, 45));
+    background:linear-gradient(45deg, rgb(41, 111, 132), rgb(12, 145, 45));
     border-radius: 5px;
     backface-visibility: hidden;
     box-shadow: 0 15px 25px rgba(0,0,0,.2);
@@ -497,7 +497,7 @@ footer {
 }
 
 #input_group button {
-    background-color: #25d366;
+    background-color: #000000;
     border: none;
     color: var(--color-neutral-40);
     padding: 0px 1.25rem;

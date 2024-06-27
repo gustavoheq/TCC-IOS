@@ -5,6 +5,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -17,15 +19,14 @@
     <header>
         <nav class="nav-bar">
             <div class="logo"><a href="../html/index.html">
-                    <img href="prod" src="../img/cafecon.png" width="90vw" alt="logo"></a>
+                    <img href="prod" src="/img/logo.png" width="90vw" alt="logo"></a>
             </div>
 
             <div class="nav-list">
                 <ul>
-                    <li class="nav-item"><a href="#init" class="nav-link">Início</a></li>
-                    <li class="nav-item"><a href="#proj" class="nav-link">Projetos</a></li>
-                    <li class="nav-item"><a href="#prod" class="nav-link">Produtos</a></li>
-                    <li class="nav-item"><a href="#sob" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="/tcc/html/index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="/html/cardapio.html" class="nav-link">Cardápio</a></li>
+                    <li class="nav-item"><a href="#Sobre" class="nav-link">Sobre</a></li>
                 </ul>
             </div>
 
@@ -48,7 +49,7 @@
             </ul>
 
             <div class="login-button">
-                <button><a href="#">Entrar</a></button>
+                <button><a href="/tcc/html/registro.html">Entrar</a></button>
             </div>
         </div>
     </header>
@@ -56,12 +57,12 @@
     <section class="sec">
         <div class="content">
             <div class="textBox">
-                <h2>Alma Coffee & Co<br><span></span></h2>
+                <h2>Alma Coffee & Co<span></span></h2>
                 <p>Todos os dias, os parceiros (funcionários) da Alma Coffee vão trabalhar na esperança de fazer duas
                     coisas: compartilhar um ótimo café com seus amigos e ajudar a tornar o mundo um pouco melhor.</p>
 
                 <p> O fluir da alma em um gole de café</p>
-                <a href="#">Ver Produtos</a>
+                <a href="/html/cardapio.html">Ver Produtos</a>
             </div>
             <div class="imgBox">
                 <img src="/imgdex/affogatto.png" class="cafe">
@@ -70,7 +71,7 @@
 
         <ul class="thumb">
             <li><img src="/imgdex/mocha_lattes.png"
-                    onclick="imgSlider('/imgdex/mocha_lattes.png');changeBgColor('#543737')"></li>
+                    onclick="imgSlider('/imgdex/mocha_lattes.png');changeBgColor('#a9a9a9')"></li>
             <li><img src="/imgdex/latteiced.png" onclick="imgSlider('/imgdex/latteiced.png');changeBgColor('#c0a276')">
             </li>
             <li><img src="/imgdex/sparklingexpress.webp"
@@ -102,7 +103,7 @@
         <div class="box3">
             <h1>E muito mais...</h1>
             <p>Conheça e experimente produtos exclusivos, desenvolvidos especialmente para você.</p>
-            <button>Veja nosso cardápio</button>
+            <a href="/html/cardapio.html">Veja nosso cardápio</a>
         </div>
 
     </section>
@@ -121,18 +122,74 @@
                     diariamente. Prezamos pela qualidade e excelência em cada detalhe.
                     <br>
                     <br>
+                    <br>
                     <a href="#" class="button">Saiba mais</a>
             </div>
     </section>
+<ul>
+    <li class="nav-item"><a href="#Sobre" class="nav-link">Sobre</a></li>
+</ul>
+
+    <section class="section__container choose__container" id="choose">
+
+        <div class="choose__content">
+          <h2 class="section__header">Sobre a Alma Coffee</h2>
+          <p class="section__subheader">
+            Informações sobre o processo da Alma Coffee
+          </p>
+          <div class="choose__grid">
+            <div class="choose__card">
+              <span><i class="ri-truck-line"></i></span>
+              <h4>Entrega</h4>
+              <p>
+                Entrega dos produtos com alta responsabilidade e qualidade.
+              </p>
+            </div>
+            <div class="choose__card">
+              <span><i class="ri-shopping-bag-3-line"></i></span>
+              <h4>Produtos</h4>
+              <p>
+               Sua entrega de forma rápida, segura e de alta qualidade
+              </p>
+            </div>
+            <div class="choose__card">
+              <span><i class="ri-customer-service-2-line"></i></span>
+              <h4>Suporte</h4>
+              <p>
+               Nossa disponibilização de suporte atrávez das nossas redes sociais.
+              </p>
+            </div>
+            <div class="choose__card">
+              <span><i class="ri-loop-right-line"></i></span>
+              <h4>Sustentabilidade</h4>
+              <p>
+                Compromisso com a proteção do meio ambiente e uso responsável de embalagens. 
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="choose__image">
+          <img src="/img/garo.png" alt="choose" />
+        </div>
+      </section>
 
 
-    <!-- <section class="galeria2">
+    <section class="centro">
+        <div class="centro">
+            <h4>CADA DETALHE IMPORTA</h4>
+            <h1>Uma experiência única</h1>
+            <p>Somos referência de cafeteria inovadora e adoramos este título! Nossas unidades possuem um espaço com
+                alto potencial de compartilhamento e a experiência presencial é incrível!</p>
+            <button type="button">venha nos visitar</button>
+        </div>
+    </section>
+
+    <header class="gaga">
         <div class="galeria">
             <div class="single-galeria">
-                <img src="/img/Captura de Tela 2024-06-22 às 10.44.31.png" alt="">
-
+                <img src="/img/espaco.png" alt="">
                 <div class="info">
-
+            
                 </div>
             </div>
 
@@ -144,46 +201,35 @@
             </div>
 
             <div class="single-galeria">
-                <img src="/img/image-9.webp" alt="">
+                <img src="/img/coffe.png" alt="">
                 <div class="info">
-
+                    
                 </div>
             </div>
 
             <div class="single-galeria">
-                <img src="/img/vinho.jpeg" alt="">
+                <img src="/img/saco.jpeg" alt="">
                 <div class="info">
-
+                    
                 </div>
             </div>
 
             <div class="single-galeria">
-                <img src="/img/WhatsApp Image 2024-06-23 at 18.56.44.jpeg" alt="">
+                <img src="/img/pardecofe.jpeg" alt="">
                 <div class="info">
+                    
                 </div>
             </div>
         </div>
-    </section> -->
+    </header>
 
-
-    <img src="/img/verdade.png" alt="" width="100%" height="180%">
-
-    <section>
-        <div class="centro">
-            <h4>CADA DETALHE IMPORTA</h4>
-            <h1>Uma experiência única</h1>
-            <p>Somos referência de cafeteria inovadora e adoramos este título! Nossas unidades possuem um espaço com
-                alto potencial de compartilhamento e a experiência presencial é incrível!</p>
-            <button type="button">venha nos visitar</button>
-        </div>
-    </section>
 
     <footer>
         <div id="footer_content">
             <div id="footer_contacts">
                 <div class="logofo">
-                    <a href="../html/index.html"><img href="init" src="../img/cafecon.png" width="90vw" alt="logo"></a>
-                    <h4>ALMA COFFE</h4>
+                    <a href="../html/index.html"><img href="init" src="/img/logo.png" width="90vw" alt="logo"></a>
+
                 </div>
 
                 <div id="footer_social_media">
