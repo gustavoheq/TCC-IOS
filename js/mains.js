@@ -9,16 +9,17 @@ function menuShow() {
     }
 }
 
-function imgSlider(anything){
+function imgSlider(anything) {
     document.querySelector('.cafe').src = anything;
 }
 
-function changeBgColor(color){
+function changeBgColor(color) {
     const sec = document.querySelector('.sec');
     sec.style.background = color
 }
 
-window.sr = ScrollReveal({reset: true})
+window.sr = ScrollReveal({ reset: true })
 
-sr.reveal('.area-1', {duration:1000});
+sr.reveal('.area-1', { duration: 1000 });
+
 

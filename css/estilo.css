@@ -106,7 +106,9 @@ svg {
 }
 
 .login-button {
-    display: inline-block;
+    display: flex;
+    margin-right: 35px;
+    justify-content: flex-start;
     margin-top: 28px;
 }
 
@@ -119,6 +121,7 @@ svg {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-bottom: 28px;
 }
 
 .login-button a:hover {
@@ -218,7 +221,6 @@ svg {
 
 .content .textBox a {
     width: 9vw;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-left: 0.5vw;
     color: #ffffff;
     background: #5B6234;
@@ -230,13 +232,12 @@ svg {
 }
 
 .box3 a {
-    width: 14vw;
-    background: #5B6234;
+    width: 13vw;
     color: #ffffff;
-    text-align: auto;
-    font-size: 14px;
-    margin-top: 20px;
-    padding: 6px 10px;
+    margin-right: 1vw;
+    background: #5B6234;
+    margin-top: 30px;
+    padding: 8px 20px;
     border-radius: 20px;
     text-decoration: none;
     text-transform: uppercase;
@@ -555,7 +556,7 @@ svg {
     background-color: #3f682d;
 }
 
-.box3 h1{
+.box3 h1 {
     color: #5B6234;
 }
 
@@ -589,45 +590,12 @@ svg {
     scroll-snap-type: y mandatory;
 }
 
-.linda {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #fff;
-    z-index: 1;
-}
-
-.linda h1 {
-    font-size: 3em;
-    margin: 0;
-}
-
-.button {
-    padding: 12px 24px;
-    font-size: 18px;
-
-    background: #5B6234;
-    color: white;
-    cursor: pointer;
-    border-radius: 20px;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: background-color 0.3s ease;
-
-}
-
-.button:hover {
-    background-color: #0e3010;
-}
-
 .eve:hover .background img {
     transform: scale(1.2) translateZ(-80px);
     scroll-snap-type: y mandatory;
 }
 
-.e {
+.box4 {
     display: flex;
     flex-direction: row;
     background-color: #fff;
@@ -645,7 +613,7 @@ svg {
     border-radius: 10px;
 }
 
-.eu {
+.box5 {
     flex: 1;
     padding: 30px;
     display: flex;
@@ -653,14 +621,14 @@ svg {
     justify-content: center;
 }
 
-.eu h1 {
+.box5 h1 {
     font-size: 40px;
     color: #5B6234;
     margin-bottom: 30px;
 }
 
 
-.eu p {
+.box5 p {
     font-size: 20px;
     color: #5B6234;
     margin-bottom: 20px;
@@ -668,27 +636,26 @@ svg {
 
 }
 
-.eu button {
-    padding: 10px 40px;
-    font-size: 18px;
-    color: #fff;
-    background-color: #aaa;
-    border-radius: 5px;
-    cursor: pointer;
-
+.box5 a {
+    width: 13vw;
+    color: #ffffff;
+    margin-right: 1vw;
+    background: #5B6234;
+    margin-top: 30px;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
-
-
-
-header div.galeria{
+header div.galeria {
     width: 100%;
     height: 90vh;
     display: flex;
     align-items: center;
 }
 
-header div.galeria div.single-galeria{
+header div.galeria div.single-galeria {
     position: relative;
     width: 20%;
     height: 100%;
@@ -696,90 +663,91 @@ header div.galeria div.single-galeria{
     transition: width 1s;
 }
 
-header div.galeria div.single-galeria:first-child{
+header div.galeria div.single-galeria:first-child {
     width: 35% !important;
 }
 
-header div.galeria:hover div.single-galeria:first-child{
+header div.galeria:hover div.single-galeria:first-child {
     width: 20% !important;
 }
 
-header div.galeria div.single-galeria:hover{
+header div.galeria div.single-galeria:hover {
     width: 35% !important;
 }
 
-header div.galeria div.single-galeria:first-child:hover{
+header div.galeria div.single-galeria:first-child:hover {
     width: 35% !important;
 }
 
 
-header div.galeria div.single-galeria img{
+header div.galeria div.single-galeria img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-header div.galeria div.single-galeria div.info{
+header div.galeria div.single-galeria div.info {
     position: absolute;
     width: 100%;
-    background: linear-gradient(to top, rgba(0,0,0,0.8) 65%, transparent);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 65%, transparent);
     padding: 16% 8%;
     bottom: 0;
 }
 
-header div.galeria div.single-galeria div.info h1{
+header div.galeria div.single-galeria div.info h1 {
     font-size: 26px;
     color: white;
 }
 
-header div.galeria div.single-galeria div.info p{
+header div.galeria div.single-galeria div.info p {
     font-size: 14px;
     line-height: 28px;
     color: white;
 }
 
-header div.galeria div.single-galeria div.info a{
+header div.galeria div.single-galeria div.info a {
     font-size: 14px;
     line-height: 28px;
     color: gold;
     text-decoration: none;
 }
 
-header div.galeria div.single-galeria div.info a:hover{
+header div.galeria div.single-galeria div.info a:hover {
     text-decoration: underline;
 }
 
-section{
+section {
     width: 100%;
     height: 100vh;
     padding: 8%;
     display: grid;
     place-items: center;
-    background-color: rgb(250,250,250);
+    background-color: rgb(250, 250, 250);
 }
 
-section p{
-    color: rgb(100,100,100);
+section p {
+    color: rgb(100, 100, 100);
     font-size: 22px;
     line-height: 32px;
 }
 
 
-@media screen and (max-width: 764px){
+@media screen and (max-width: 764px) {
 
-    header div.galeria{
+    header div.galeria {
         width: 100%;
         height: 70vh;
         justify-content: flex-start;
         overflow-x: scroll;
     }
-    
-    header div.galeria div.single-galeria{
+
+    header div.galeria div.single-galeria {
         min-width: 90% !important;
     }
 
 }
-.centro {
+
+.box7 {
     width: 100%;
     min-height: 100vh;
     background: hsl(0, 0%, 100%);
@@ -791,33 +759,32 @@ section p{
     padding: 100px;
 }
 
-.centro .h4 {
+.box7 .h4 {
     font-size: 20px;
     color: #5B6234;
     margin: 0;
 }
 
-.centro .h1 {
+.box7 .h1 {
     font-size: 60px;
     color: #5B6234;
     margin: 10px 0;
 }
 
-.centro p {
+.box7 p {
     color: #5B6234;
     font-size: 20px;
     text-align: center;
     margin: 10px 0;
 }
 
-.centro button {
-    width: 15vw;
-    font-size: 15px;
+.box7 a {
+    width: 13vw;
+    text-align: center;
     color: #ffffff;
-    background: #da8e2ace;
-    margin-top: 20px;
+    background: #5B6234;
+    margin-top: 30px;
     padding: 8px 20px;
-    cursor: pointer;
     border-radius: 20px;
     text-decoration: none;
     text-transform: uppercase;
@@ -972,6 +939,10 @@ footer {
         display: none;
     }
 
+    .nav-item a {
+        color: #000;
+    }
+
     .login-button {
         display: none;
     }
@@ -1022,20 +993,20 @@ footer {
         gap: 2rem;
     }
 
-    .centro {
+    .box7 {
         padding: 50px;
     }
 
-    .centro h1 {
+    .box7 h1 {
         font-size: 40px;
         color: var(--color-neutral-0);
     }
 
-    .centro p {
+    .box7 p {
         font-size: 18px;
     }
 
-    .centro button {
+    .box7 button {
         width: 50%;
     }
 
@@ -1139,19 +1110,19 @@ footer {
         gap: 2rem;
     }
 
-    .centro {
+    .box7 {
         padding: 20px;
     }
 
-    .centro h1 {
+    .box7 h1 {
         font-size: 30px;
     }
 
-    .centro p {
+    .box7 p {
         font-size: 16px;
     }
 
-    .centro button {
+    .box7 button {
         width: 70%;
         font-size: 14px;
     }
@@ -1196,7 +1167,7 @@ footer {
     }
 }
 
-.centro {
+.box7 {
     width: 100%;
     min-height: 100vh;
     background: hsl(0, 0%, 100%);
@@ -1208,25 +1179,25 @@ footer {
     padding: 100px;
 }
 
-.centro h4 {
+.box7 h4 {
     font-size: 20px;
     color: var(--color-neutral-0);
     margin: 0;
 }
 
-.centro h1 {
+.box7 h1 {
     font-size: 60px;
     color: var(--color-neutral-0);
     margin: 10px 0;
 }
 
-.centro p {
+.box7 p {
     font-size: 20px;
     text-align: center;
     margin: 10px 0;
 }
 
-.centro button {
+.box7 button {
     width: 15vw;
     font-size: 15px;
     color: #ffffff;
@@ -1241,9 +1212,9 @@ footer {
 
 
 
-.choose__content.section__header h2{
+.choose__content.section__header h2 {
     font-size: 20%;
-   
+
 }
 
 
@@ -1253,9 +1224,9 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     align-items: center;
-  }
-  
-  .choose__container .choose__bg {
+}
+
+.choose__container .choose__bg {
     position: absolute;
     top: 1rem;
     left: 50%;
@@ -1263,40 +1234,39 @@ footer {
     max-width: 300px;
     opacity: 0.4;
     z-index: -1;
-  }
-  
-  .choose__grid {
+}
+
+.choose__grid {
     margin-top: 2rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem 1rem;
-  }
-  
-  .choose__card span {
+}
+
+.choose__card span {
     display: inline-block;
     margin-bottom: 0.5rem;
     padding: 5px 10px;
     font-size: 1.25rem;
     background-color: #cad8d8;
     border-radius: 100%;
-  }
-  
-  .choose__card h4 {
+}
+
+.choose__card h4 {
     margin-bottom: 1rem;
     font-size: 1rem;
     font-weight: 600;
     font-family: var(--header-font);
     color: var(--text-dark);
-  }
-  
-  .choose__card p {
+}
+
+.choose__card p {
     color: var(--text-light);
-  }
-  
-  .choose__image img {
+}
+
+.choose__image img {
     max-width: 500px;
     margin: auto;
     border-radius: 10px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
-  }
-  
+}
