@@ -17,38 +17,35 @@
 <body>
   <header>
     <nav class="nav-bar">
-      <div class="logo"><a href="/html/inicial.html">
-          <img href="prod" src="/img/logo.png" width="70px" height="40px" alt="logo"></a>
+      <div class="logo"><a href="../index.html">
+          <img href="prod" src="../img/logo.png" width="90vw" alt="logo"></a>
       </div>
 
       <div class="nav-list">
         <ul>
-          <li class="nav-item"><a href="/tcc/html/index.html" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="/html/cardapio.html" class="nav-link">Cardápio</a></li>
-          <li class="nav-item"><a href="/tcc/html/registro.html" class="nav-link">Entrar</a></li>
+          <li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+          <li class="nav-item"><a href="../html/cardapio.html" class="nav-link">Cardápio</a></li>
         </ul>
       </div>
 
       <div class="login-button">
-        <a href="./html/registro.html" class="button-link">Entrar</a>
+        <a href="./registro.html" class="button-link">Entrar</a>
       </div>
 
 
       <div class="mobile-menu-icon">
-        <button onclick="menuShow()"><img class="icon" src="./img/menu_white_36dp.svg" alt=""></button>
+        <button onclick="menuShow()"><img class="icon" src="/img/menu_white_36dp.svg" alt=""></button>
       </div>
     </nav>
 
     <div class="mobile-menu">
       <ul>
-        <li class="nav-item"><a href="#init" class="nav-link">Início</a></li>
-        <li class="nav-item"><a href="#proj" class="nav-link">Projetos</a></li>
-        <li class="nav-item"><a href="#prod" class="nav-link">Produtos</a></li>
-        <li class="nav-item"><a href="#sob" class="nav-link">Sobre</a></li>
+        <li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+        <li class="nav-item"><a href="./html/cardapio.html" class="nav-link">Cardápio</a></li>
       </ul>
 
       <div class="login-button">
-        <button><a href="#">Entrar</a></button>
+        <button><a href="./html/registro.html">Entrar</a></button>
       </div>
     </div>
   </header>
@@ -354,7 +351,8 @@
 
     <div class="container-options">
       <span class="active" id="Lanches">Categoria:</span>
-      <span href="lanches">Lanches</span>
+      <a href="#Lanches" class="lanche"><span>Lanches</span></a>
+      <a href="#Bebidas" class="bebida"><span>Bebidas</span></a>
     </div>
 
     <div class="container-products">
@@ -626,11 +624,10 @@
   <footer>
     <div id="footer_content">
       <div id="footer_contacts">
-        <div class="logofo"><a href="/html/inicial.html">
-            <img href="init" src="/img/logo.png" width="90vw" alt="logo"></a>
+        <div class="logofo">
+          <a href="../index.html"><img src="/img/logo.png" width="90vw" alt="logo"></a>
 
         </div>
-
 
         <div id="footer_social_media">
 
@@ -649,16 +646,17 @@
       </div>
       <ul class="footer-list">
         <li>
-          <h3>Sobre Nós</h3>
+          <h3>Guia</h3>
         </li>
         <li>
-          <a href="/html/sobre.html" class="footer-link">Historia</a>
+          <a href="../index.html" class="footer-link">Início</a>
+        </li>
+
+        <li>
+          <a href="../index.html" class="footer-link">Sobre</a>
         </li>
         <li>
-          <a href="#proj" class="footer-link">Projeto</a>
-        </li>
-        <li>
-          <a href="#proj" class="footer-link">Visão</a>
+          <a href="../index.html" class="footer-link">Localização</a>
         </li>
       </ul>
 
@@ -667,13 +665,13 @@
           <h3>Produtos</h3>
         </li>
         <li>
-          <a href="/cardapio.html" class="footer-link">Bebidas</a>
+          <a href="/html/cardapio.html" class="footer-link">Cardápio</a>
         </li>
         <li>
-          <a href="/cardapio.html" class="footer-link">Lanches</a>
+          <a href="#Bebidas" class="footer-link">Bebidas</a>
         </li>
         <li>
-          <a href="" class="footer-link">Localização</a>
+          <a href="#Lanches" class="footer-link">Lanches</a>
         </li>
       </ul>
 
@@ -694,9 +692,10 @@
     </div>
     <div id="footer_copyright">
       &#169
-      2024 Projeto Alma Coffe.
+      2024 Alma Coffee Co.
     </div>
   </footer>
+
   <script src="/js/mains.js"></script>
 </body>
 
