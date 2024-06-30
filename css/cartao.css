@@ -50,7 +50,7 @@ header {
 .nav-bar {
     display: flex;
     justify-content: space-between;
-    padding: 1.5rem 6rem;
+    padding: 0.1rem 6rem;
 }
 
 .logo {
@@ -106,7 +106,9 @@ svg {
 }
 
 .login-button {
-    display: inline-block;
+    display: flex;
+    margin-right: 35px;
+    justify-content: flex-start;
     margin-top: 28px;
 }
 
@@ -119,6 +121,7 @@ svg {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-bottom: 28px;
 }
 
 .login-button a:hover {
@@ -277,13 +280,12 @@ main {
 
 .formulario form .submit-btn{
     width: 49%;
-    background:#4CAF50;
-    
+    background:#4CAF50;    
     margin-top: 20px;
     padding: 10px;
     font-size: 20px;
     color:#ffffff;
-    border-radius: 10px;
+    border-radius: 4px;
     cursor: pointer;
     transition: .2s linear;
 }
@@ -291,6 +293,7 @@ main {
 .formulario form .submit-btn:hover{
     letter-spacing: 2px;
     opacity: .8;
+    background-color: #45a049;
 }
 
 .formulario .card-formulario{
@@ -432,7 +435,7 @@ footer {
     justify-content: center;
     height: 2.5rem;
     width: 2.5rem;
-    color: var(--color-neutral-40);
+    color: #fff;
     border-radius: 50%;
 }
 
@@ -464,7 +467,7 @@ footer {
 }
 
 .footer-list .footer-link {
-    color: var(--color-ver-03);
+    color: #000;
     transition: all 0.4s;
 }
 
@@ -479,7 +482,7 @@ footer {
 }
 
 #footer_subscribe p {
-    color: var(--color-neutral-30);
+    color: #000;
 }
 
 #input_group {
@@ -497,7 +500,7 @@ footer {
 }
 
 #input_group button {
-    background-color: #000000;
+    background-color: #070707;
     border: none;
     color: var(--color-neutral-40);
     padding: 0px 1.25rem;
@@ -537,6 +540,10 @@ footer {
 
     .nav-item {
         display: none;
+    }
+
+    .nav-item a {
+        color: #000;
     }
 
     .login-button {
@@ -588,61 +595,6 @@ footer {
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
     }
-
-    .centro {
-        padding: 50px;
-    }
-
-    .centro h1 {
-        font-size: 40px;
-    }
-
-    .centro p {
-        font-size: 18px;
-    }
-
-    .centro button {
-        width: 50%;
-    }
-
-    .sec .content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .sec .textBox,
-    .sec .imgBox {
-        width: 100%;
-        text-align: center;
-    }
-
-    .sec .imgBox img {
-        width: 80%;
-    }
-
-    .box .box1,
-    .box .box3 {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .box .box3 {
-        text-align: center;
-    }
-
-    .e {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .e .image img {
-        width: 50%;
-    }
-
-    .e .eu {
-        width: 90%;
-        text-align: center;
-    }
 }
 
 
@@ -653,6 +605,10 @@ footer {
 
     .nav-item {
         display: none;
+    }
+
+    .nav-item a {
+        color: #000;
     }
 
     .login-button {
@@ -704,102 +660,4 @@ footer {
         padding: 3rem 2rem;
         gap: 2rem;
     }
-
-    .centro {
-        padding: 20px;
-    }
-
-    .centro h1 {
-        font-size: 30px;
-    }
-
-    .centro p {
-        font-size: 16px;
-    }
-
-    .centro button {
-        width: 70%;
-        font-size: 14px;
-    }
-
-    .sec .content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .sec .textBox,
-    .sec .imgBox {
-        width: 100%;
-        text-align: center;
-    }
-
-    .sec .imgBox img {
-        width: 100%;
-    }
-
-    .box .box1,
-    .box .box3 {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .box .box3 {
-        text-align: center;
-    }
-
-    .e {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .e .image img {
-        width: 70%;
-    }
-
-    .e .eu {
-        width: 90%;
-        text-align: center;
-    }
-}
-
-.centro {
-    width: 100%;
-    min-height: 100vh;
-    background: hsl(0, 0%, 100%);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: 0.5s;
-    padding: 100px;
-}
-
-.centro h4 {
-    font-size: 20px;
-    color: #50a053;
-    margin: 0;
-}
-
-.centro h1 {
-    font-size: 60px;
-    color: #50a053;
-    margin: 10px 0;
-}
-
-.centro p {
-    font-size: 20px;
-    text-align: center;
-    margin: 10px 0;
-}
-
-.centro button {
-    width: 15vw;
-    font-size: 15px;
-    color: #ffffff;
-    background: #2dca3d;
-    margin-top: 20px;
-    padding: 8px 20px;
-    border-radius: 20px;
-    text-decoration: none;
-    text-transform: uppercase;
 }
