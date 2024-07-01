@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
 :root {
+    --white: #fff;
+    --red: #5B6234;
+    --gray: #959595;
+    --blue: #1f9c0f;
     --color-neutral-0: #5B6234;
     --color-neutral-10: #ffffff;
     --color-neutral-30: #000000;
@@ -151,14 +155,6 @@ svg {
 .mobile-menu {
     display: none;
 }
-
-main {
-    height: 80vw;
-}
-
-
-
-
 
 footer {
     width: 100%;
@@ -373,6 +369,7 @@ footer {
     .nav-item a {
         color: #000;
     }
+
     .login-button {
         display: none;
     }
@@ -534,7 +531,7 @@ footer {
     display: inline-block;
     color: #fff8f8;
     background-color: #5B6234;
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem 1rem;
     font-size: 1rem;
     text-transform: capitalize;
     border-radius: 1rem;
@@ -715,4 +712,103 @@ footer {
 
 p {
     text-align: center;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-head-item {
+    text-align: start;
+    border-bottom: 1px solid var(--gray);
+    padding-bottom: 6px;
+    text-transform: uppercase;
+}
+
+.second-col,
+.third-col {
+    width: 26%;
+}
+
+.cart-product td {
+    padding: 8px 0;
+}
+
+.product-identification {
+    display: flex;
+    align-items: center;
+}
+
+.cart-product-image {
+    width: 10vw;
+}
+
+.cart-product-title {
+    margin-left: 16px;
+    font-size: 1.2rem;
+}
+
+.cart-product-price {
+    font-family: "Roboto", sans-serif;
+}
+
+.product-qtd-input {
+    width: 48px;
+    height: 34px;
+    border-radius: 6px;
+    border: 2px solid var(--blue);
+    text-align: center;
+    background: #eee;
+}
+
+.remove-product-button {
+    margin-left: 12px;
+    background: #ff0000;
+    color: var(--white);
+    padding: 10px 8px;
+    border: 0;
+    border-radius: 6px;
+
+    transition: filter 0.2s;
+}
+
+.remove-product-button:hover {
+    filter: brightness(0.8);
+}
+
+.cart-total-container {
+    border-top: 1px solid var(--gray);
+    text-align: end;
+    padding: 6px 16px 0 0;
+    font-size: 18px;
+}
+
+.cart-total-container strong {
+    margin-right: 12px;
+}
+
+.purchase-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-top: 20px;
+    /* Ajuste conforme necessário */
+}
+
+.purchase-button {
+    background-color: var(--color-ver-04);
+    font-size: 1.3rem;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.purchase-button:hover {
+    background-color: var(--primary-color);
+    color: #5B6234;
 }
