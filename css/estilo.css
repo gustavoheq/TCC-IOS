@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
-:root {
+   :root {
     --color-neutral-0: #5B6234;
     --color-neutral-10: #ffffff;
     --color-neutral-30: #000000;
@@ -1270,4 +1270,152 @@ footer {
     margin: auto;
     border-radius: 10px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+} 
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    /* Estilos para telas menores */
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    .login-button {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .mobile-menu .login-button {
+        display: flex;
+        padding: 1rem 2rem;
+    }
+
+    .mobile-menu .login-button button {
+        background-color: var(--color-neutral-10);
+        padding-left: 33vw;
+    }
+
+    .open {
+        display: block;
+    }
+
+    .listProduct {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #footer_content {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem;
+        gap: 2rem;
+    }
+
+    .box7 {
+        padding: 20px;
+    }
+
+    .box7 h1 {
+        font-size: 30px;
+    }
+
+    .box7 p {
+        font-size: 16px;
+    }
+
+    .box7 button {
+        width: 70%;
+        font-size: 14px;
+    }
+
+    .sec .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sec .textBox,
+    .sec .imgBox {
+        width: 100%;
+        text-align: center;
+    }
+
+    .sec .imgBox img {
+        width: 100%;
+    }
+
+    .box .box1,
+    .box .box3 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .box .box3 {
+        text-align: center;
+    }
+
+    .e {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .e .image img {
+        width: 70%;
+    }
+
+    .e .eu {
+        width: 90%;
+        text-align: center;
+    }
+
+    .content .textBox a{
+
+    }
+    .content .imgBox img{
+        width: auto;
+        align-items: center;
+    }
+
+    .box3 a{
+        width: auto;
+    }
+    .box4 .box5{
+        display: flex;
+        height: auto;
+
+    }
+    section{
+        width: auto;
+        height: auto;
+    }
+
+    .overlay{
+        grid-column: auto;
+    }
+
 }
