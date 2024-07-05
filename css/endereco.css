@@ -386,7 +386,7 @@ footer {
 #input_group {
     display: flex;
     align-items: center;
-    background-color: var(--color-neutral-0);
+    background-color: #a5b44e;
     border-radius: 4px;
 }
 

@@ -223,15 +223,17 @@ body.showCart .container {
     width: 0;
 }
 
-main {    
-    margin:0; padding:0;
+main {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    outline: none; border: none;
+    outline: none;
+    border: none;
     text-decoration: none;
     text-transform: uppercase;
 }
 
-.formulario{
+.formulario {
     min-height: 100vh;
     background: var(--color-ver-02);
     display: flex;
@@ -241,154 +243,156 @@ main {
     padding-bottom: 60px;
 }
 
-.formulario form{
+.formulario form {
     background: #fff;
     border-radius: 5px;
-    box-shadow: 0 10px 15px rgba(0,0,0,.1);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .1);
     padding: 20px;
     width: 600px;
     padding-top: 160px;
 }
 
-.formulario form .inputBox{
+.formulario form .inputBox {
     margin-top: 20px;
 }
 
-.formulario form .inputBox span{
+.formulario form .inputBox span {
     display: block;
-    color:#999;
+    color: #999;
     padding-bottom: 5px;
 }
 
 .formulario form .inputBox input,
-.formulario form .inputBox select{
+.formulario form .inputBox select {
     width: 100%;
     padding: 10px;
     border-radius: 10px;
-    border:1px solid rgba(0,0,0,.3);
-    color:#444;
+    border: 1px solid rgba(0, 0, 0, .3);
+    color: #444;
 }
 
-.formulario form .flexbox{
+.formulario form .flexbox {
     display: flex;
-    gap:15px;
+    gap: 15px;
 }
 
-.formulario form .flexbox .inputBox{
-    flex:1 1 150px;
+.formulario form .flexbox .inputBox {
+    flex: 1 1 150px;
 }
 
-.formulario form .submit-btn{
+.formulario form .submit-btn {
     width: 49%;
-    background:#4CAF50;    
+    background: #4CAF50;
     margin-top: 20px;
     padding: 10px;
     font-size: 20px;
-    color:#ffffff;
+    color: #ffffff;
     border-radius: 4px;
     cursor: pointer;
     transition: .2s linear;
 }
 
-.formulario form .submit-btn:hover{
+.formulario form .submit-btn:hover {
     letter-spacing: 2px;
     opacity: .8;
     background-color: #45a049;
 }
 
-.formulario .card-formulario{
+.formulario .card-formulario {
     margin-bottom: -150px;
     position: relative;
     height: 250px;
     width: 400px;
 }
 
-.formulario .card-formulario .front{
+.formulario .card-formulario .front {
     position: absolute;
     height: 100%;
     width: 100%;
-    top: 0; left: 0;
-    background:linear-gradient(45deg, rgb(41, 111, 132), rgb(12, 145, 45));
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, rgb(41, 111, 132), rgb(12, 145, 45));
     border-radius: 5px;
     backface-visibility: hidden;
-    box-shadow: 0 15px 25px rgba(0,0,0,.2);
-    padding:20px;
-    transform:perspective(1000px) rotateY(0deg);
-    transition:transform .4s ease-out;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .2);
+    padding: 20px;
+    transform: perspective(1000px) rotateY(0deg);
+    transition: transform .4s ease-out;
 }
 
-.formulario .card-formulario .front .image{
+.formulario .card-formulario .front .image {
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: space-between;
     padding-top: 10px;
 }
 
-.formulario .card-formulario .front .image img{
+.formulario .card-formulario .front .image img {
     height: 50px;
 }
 
-.formulario .card-formulario .front .card-number-box{
-    padding:30px 0;
+.formulario .card-formulario .front .card-number-box {
+    padding: 30px 0;
     font-size: 22px;
-    color:#fff;
+    color: #fff;
 }
 
-.formulario .card-formulario .front .flexbox{
+.formulario .card-formulario .front .flexbox {
     display: flex;
 }
 
-.formulario .card-formulario .front .flexbox .box:nth-child(1){
+.formulario .card-formulario .front .flexbox .box:nth-child(1) {
     margin-right: auto;
 }
 
-.formulario .card-formulario .front .flexbox .box{
+.formulario .card-formulario .front .flexbox .box {
     font-size: 15px;
-    color:#fff;
+    color: #fff;
 }
 
-.formulario .card-formulario .back{
+.formulario .card-formulario .back {
     position: absolute;
-    top:0; left: 0;
+    top: 0;
+    left: 0;
     height: 100%;
     width: 100%;
-    background:linear-gradient(45deg, rgb(43, 183, 226), rgb(12, 145, 45));
+    background: linear-gradient(45deg, rgb(43, 183, 226), rgb(12, 145, 45));
     border-radius: 5px;
     padding: 20px 0;
     text-align: right;
     backface-visibility: hidden;
-    box-shadow: 0 15px 25px rgba(0,0,0,.2);
-    transform:perspective(1000px) rotateY(180deg);
-    transition:transform .4s ease-out;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .2);
+    transform: perspective(1000px) rotateY(180deg);
+    transition: transform .4s ease-out;
 }
 
-.formulario .card-formulario .back .stripe{
+.formulario .card-formulario .back .stripe {
     background: #000;
     width: 100%;
     margin: 10px 0;
     height: 50px;
 }
 
-.formulario .card-formulario .back .box{
+.formulario .card-formulario .back .box {
     padding: 0 20px;
 }
 
-.formulario .card-formulario .back .box span{
-    color:#fff;
+.formulario .card-formulario .back .box span {
+    color: #fff;
     font-size: 15px;
 }
 
-.formulario .card-formulario .back .box .cvv-box{
+.formulario .card-formulario .back .box .cvv-box {
     height: 50px;
     padding: 10px;
     margin-top: 5px;
-    color:#333;
+    color: #333;
     background: #fff;
     border-radius: 5px;
     width: 100%;
 }
 
-.formulario .card-formulario .back .box img{
+.formulario .card-formulario .back .box img {
     margin-top: 30px;
     height: 30px;
 }
@@ -488,7 +492,7 @@ footer {
 #input_group {
     display: flex;
     align-items: center;
-    background-color: var(--color-neutral-0);
+    background-color: #a5b44e;
     border-radius: 4px;
 }
 

@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
 :root {
-    --color-texto-cards:#f0f8ff;
+    --color-texto-cards: #f0f8ff;
     --color-claro: #090907;
     --color-verde-medio: #9FB167;
     --color-verde-semiescuro: #859456;
     --color-verde-escuro: #6D7946;
     --color-textos: #3d3d3d;
-    --color-neutral-0: #5B6234;;
+    --color-neutral-0: #5B6234;
     --color-neutral-10: #ffffff;
     --color-neutral-30: #000000;
     --color-neutral-40: #080707;
@@ -231,7 +231,8 @@ span {
 input {
     width: 100%;
     padding: 12px 8px;
-    background-color: #31bf5f70;;
+    background-color: #31bf5f70;
+    ;
     border: none;
     outline: none;
 }
@@ -499,7 +500,7 @@ footer {
 #input_group {
     display: flex;
     align-items: center;
-    background-color: var(--color-neutral-0);
+    background-color: #a5b44e;
     border-radius: 4px;
 }
 
@@ -543,10 +544,12 @@ footer {
     .container {
         flex-direction: column;
     }
+
     .form-container {
         width: 100%;
         margin-bottom: 20px;
     }
+
     .overlay-container {
         width: 100%;
     }
