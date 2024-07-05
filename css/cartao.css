@@ -665,3 +665,80 @@ footer {
         gap: 2rem;
     }
 }
+
+@media screen and (max-width: 426px) {
+
+    .card-number-box,
+    .cvv-box {
+        margin: 10px 10px 10 ;
+        padding: 10px;
+        border-radius: 5px;      
+    }
+
+    .flexbox {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .box {
+        margin-bottom: 5px;
+    }
+
+    .inputBox {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .inputBox span {
+        font-size: 14px;
+        display: block;
+        text-align: center;
+    }
+
+    .card-number-input,
+    .card-holder-input,
+    .cvv-input,
+    .month-input,
+    .year-input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    .submit-btn {
+        width: 100%;
+        margin-top: 10px;
+        font-size: 16px;
+        padding: 10px;
+        background-color: #5B6234;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .formulario form .inputBox input,
+    .formulario form .inputBox select {
+        width: 70%;
+        margin-left: 20vw;
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid rgba(0, 0, 0, .3);
+        color: #444;
+    }
+
+    .formulario form .flexbox .inputBox {
+        flex: 1 1 10px;
+    }
+
+    .formulario form .submit-btn {
+        width: 50%;
+        margin-left: 35vw;
+        }
+}
