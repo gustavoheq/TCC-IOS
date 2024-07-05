@@ -1399,6 +1399,9 @@ footer {
     .content .imgBox img{
         width: auto;
         align-items: center;
+        display: flex;
+        margin-left: 30vw;
+        
     }
 
     .box3 a{
@@ -1417,5 +1420,10 @@ footer {
     .overlay{
         grid-column: auto;
     }
+
+    .box7 a{
+        width: auto;
+    }
+
 
 }
