@@ -500,7 +500,7 @@ footer {
 #input_group {
     display: flex;
     align-items: center;
-    background-color: #a5b44e;
+    background-color: #31bf5f70;
     border-radius: 4px;
 }
 
@@ -539,19 +539,6 @@ footer {
 @media only screen and (max-width: 992px) {
     .listProduct {
         grid-template-columns: repeat(3, 1fr);
-    }
-
-    .container {
-        flex-direction: column;
-    }
-
-    .form-container {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .overlay-container {
-        width: 100%;
     }
 }
 
@@ -682,5 +669,32 @@ footer {
         grid-template-columns: repeat(1, 1fr);
         padding: 3rem 2rem;
         gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .form-container {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .form-container.sign-up-container {
+        order: 2; 
+    }
+
+    .form-container.sign-in-container {
+        order: 1; 
+    }
+
+    .infield input {
+        width: calc(100% - 20px); 
+    }
+
+    .forgot {
+        text-align: left; 
+    }
+
+    .overlay-container {
+        display: none; 
     }
 }
