@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
-   :root {
+:root {
     --color-neutral-0: #5B6234;
     --color-neutral-10: #ffffff;
     --color-neutral-30: #000000;
@@ -329,7 +329,6 @@ svg {
     background: gray;
     width: 100%;
     height: 100%;
-
 }
 
 .content .textBox h2 span {
@@ -348,10 +347,6 @@ svg {
     padding-right: 60px;
     margin-top: 50px;
     justify-content: flex-end;
-}
-
-.content .imgBox img {
-    max-width: 700px;
 }
 
 .thumb {
@@ -374,7 +369,6 @@ svg {
 .thumb li:hover {
     transform: translateY(-15px);
 }
-
 
 .thumb li img {
     max-width: 100px;
@@ -921,6 +915,110 @@ footer {
     font-weight: 100;
 }
 
+.box7 {
+    width: 100%;
+    min-height: 100vh;
+    background: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    padding: 100px;
+}
+
+.box7 h4 {
+    font-size: 20px;
+    color: var(--color-neutral-0);
+    margin: 0;
+}
+
+.box7 h1 {
+    font-size: 60px;
+    color: var(--color-neutral-0);
+    margin: 10px 0;
+}
+
+.box7 p {
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.box7 button {
+    width: 15vw;
+    font-size: 15px;
+    color: #ffffff;
+    background: var(--color-neutral-0);
+    margin-top: 20px;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.choose__content.section__header h2 {
+    font-size: 20%;
+
+}
+
+
+.choose__container {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: center;
+}
+
+.choose__container .choose__bg {
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-3rem);
+    max-width: 300px;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+.choose__grid {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 1rem;
+}
+
+.choose__card span {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    padding: 5px 10px;
+    font-size: 1.25rem;
+    background-color: #cad8d8;
+    border-radius: 100%;
+}
+
+.choose__card h4 {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: var(--header-font);
+    color: var(--text-dark);
+}
+
+.choose__card p {
+    color: var(--text-light);
+}
+
+.choose__image img {
+    max-width: 500px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
 @media only screen and (max-width: 992px) {
     .listProduct {
         grid-template-columns: repeat(3, 1fr);
@@ -1045,7 +1143,30 @@ footer {
         width: 90%;
         text-align: center;
     }
+
+    .box {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .box1 {
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    .overlay {
+        position: static;
+        width: auto;
+        height: auto;
+        background-color: rgba(195, 193, 193, 0.468);
+        color: white;
+        opacity: 1;
+        transition: none;
+        text-align: center;
+        padding: 10px;
+    }
 }
+
 
 
 @media screen and (max-width: 426px) {
@@ -1166,118 +1287,32 @@ footer {
         width: 90%;
         text-align: center;
     }
+
+    .box {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .box1 {
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    .overlay {
+        position: static;
+        width: auto;
+        height: auto;
+        background-color: rgba(195, 193, 193, 0.468);
+        color: white;
+        opacity: 1;
+        transition: none;
+        text-align: center;
+        padding: 10px;
+    }
 }
-
-.box7 {
-    width: 100%;
-    min-height: 100vh;
-    background: hsl(0, 0%, 100%);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: 0.5s;
-    padding: 100px;
-}
-
-.box7 h4 {
-    font-size: 20px;
-    color: var(--color-neutral-0);
-    margin: 0;
-}
-
-.box7 h1 {
-    font-size: 60px;
-    color: var(--color-neutral-0);
-    margin: 10px 0;
-}
-
-.box7 p {
-    font-size: 20px;
-    text-align: center;
-    margin: 10px 0;
-}
-
-.box7 button {
-    width: 15vw;
-    font-size: 15px;
-    color: #ffffff;
-    background: var(--color-neutral-0);
-    margin-top: 20px;
-    padding: 8px 20px;
-    border-radius: 20px;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-
-
-
-.choose__content.section__header h2 {
-    font-size: 20%;
-
-}
-
-
-.choose__container {
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    align-items: center;
-}
-
-.choose__container .choose__bg {
-    position: absolute;
-    top: 1rem;
-    left: 50%;
-    transform: translateX(-3rem);
-    max-width: 300px;
-    opacity: 0.4;
-    z-index: -1;
-}
-
-.choose__grid {
-    margin-top: 2rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem 1rem;
-}
-
-.choose__card span {
-    display: inline-block;
-    margin-bottom: 0.5rem;
-    padding: 5px 10px;
-    font-size: 1.25rem;
-    background-color: #cad8d8;
-    border-radius: 100%;
-}
-
-.choose__card h4 {
-    margin-bottom: 1rem;
-    font-size: 1rem;
-    font-weight: 600;
-    font-family: var(--header-font);
-    color: var(--text-dark);
-}
-
-.choose__card p {
-    color: var(--text-light);
-}
-
-.choose__image img {
-    max-width: 500px;
-    margin: auto;
-    border-radius: 10px;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
-} 
-
-
-
-
-
 
 @media screen and (max-width: 768px) {
+
     /* Estilos para telas menores */
     .nav-bar {
         padding: 1.5rem 4rem;
@@ -1393,37 +1428,35 @@ footer {
         text-align: center;
     }
 
-    .content .textBox a{
-
-    }
-    .content .imgBox img{
-        width: auto;
-        align-items: center;
-        display: flex;
-        margin-left: 30vw;
-        
+    .content .imgBox img {
+        width: 400px;
     }
 
-    .box3 a{
+    .box3 a {
         width: auto;
     }
-    .box4 .box5{
+
+    .box4 .box5 {
         display: flex;
         height: auto;
 
     }
-    section{
+
+    section {
         width: auto;
         height: auto;
     }
 
-    .overlay{
+    .overlay {
         grid-column: auto;
     }
 
-    .box7 a{
+    .box7 a {
         width: auto;
     }
 
+    .choose__image img {
+        display: none;
+    }
 
 }
