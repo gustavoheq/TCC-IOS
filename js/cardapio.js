@@ -1,41 +1,36 @@
 function menuShow() {
   let menuMobile = document.querySelector('.mobile-menu');
   if (menuMobile.classList.contains('open')) {
-      menuMobile.classList.remove('open');
-      document.querySelector('.icon').src = "../img/menu_white_36dp.svg"
+    menuMobile.classList.remove('open');
+    document.querySelector('.icon').src = "../img/menu_white_36dp.svg"
   } else {
-      menuMobile.classList.add('open');
-      document.querySelector('.icon').src = "../img/close_white_36dp.svg"
+    menuMobile.classList.add('open');
+    document.querySelector('.icon').src = "../img/close_white_36dp.svg"
   }
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-  // Event listeners
+document.addEventListener('DOMContentLoaded', function () {
 
-  // Adicionar ao carrinho
   const addToCartButtons = document.querySelectorAll('.add-cart');
   addToCartButtons.forEach(button => {
     button.addEventListener('click', addProductToCart);
   });
 
-  // Inicializar event listeners para produtos já no carrinho
   initializeCartProductListeners();
 });
 
 function initializeCartProductListeners() {
-  // Remover produto do carrinho
+
   const removeCartProductButtons = document.querySelectorAll('.remove-product-button');
   removeCartProductButtons.forEach(button => {
     button.addEventListener('click', removeProduct);
   });
 
-  // Atualizar quantidade
   const quantityInputs = document.querySelectorAll('.product-qtd-input');
   quantityInputs.forEach(input => {
     input.addEventListener('change', checkIfInputIsNull);
   });
 
-  // Finalizar compra
   const purchaseButton = document.querySelector('.purchase-button');
   purchaseButton.addEventListener('click', makePurchase);
 }
@@ -84,7 +79,6 @@ function addProductToCart(event) {
 
   updateTotal();
 
-  // Após adicionar um novo produto ao carrinho, re-inicializar os event listeners dos produtos no carrinho
   initializeCartProductListeners();
 }
 
@@ -144,24 +138,18 @@ function updateTotal() {
     const quantityElement = product.querySelector('.product-qtd-input');
     const totalElement = product.querySelector('.cart-product-total');
 
-    // Extract price from the inner text, accounting for currency and formatting
-    const priceText = priceElement.innerText.trim(); // Remove any surrounding whitespace
+    const priceText = priceElement.innerText.trim();
     const price = parseFloat(priceText.replace('R$', '').replace(',', '.'));
 
-    // Extract quantity from the input element
     const quantity = parseInt(quantityElement.value);
 
-    // Calculate total for this product
     const total = price * quantity;
 
-    // Update the displayed total with proper currency formatting
     totalElement.innerText = `R$${total.toFixed(2).replace('.', ',')}`;
 
-    // Accumulate total amount
     totalAmount += total;
   });
 
-  // Update the total amount in the cart summary with proper currency formatting
   const totalFormatted = `R$${totalAmount.toFixed(2).replace('.', ',')}`;
   document.querySelector('.cart-total-container span').innerText = totalFormatted;
 }
